@@ -20,3 +20,8 @@ nano /etc/fstab
 UUID=aa917989-5538-48f5-9dfb-d595ac4ac041    /mnt/external    ext4    defaults    0    0
 mount -a
 ```
+
+### Build Docker ARM on x86
+```
+docker run --privileged multiarch/qemu-user-static:register
+```
