@@ -26,6 +26,11 @@ mount -a
 docker run --privileged multiarch/qemu-user-static:register
 ```
 
+### Create checksum for directory tree
+```bash
+find directory -type f -print0 | xargs -0 md5sum >> checksum.md5
+```
+
 ## JavaScript
 
 ### String to uint32 hash function
